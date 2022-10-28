@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url(./fonts/Pokemon\ GB.ttf);
+}
+html {
+    background: url("bg.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+.trainer {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #eee;
+}
+
+.sides {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+}
+
+.side {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.trainerSprite {
+    width: 100%;
+}
+
+.party {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+.pokemon p {
+    margin: 0
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.moves {
+    padding-top: 3rem;
+}
+
+.moves button {
+    margin: 1rem;
+}
+
+.ldBar-label:after {
+    content: " HP";
+    font-size: .7em;
+}
+
+.displays {
+    display: grid;
+    grid-template-rows: 1fr 1fr 100px;
+    /* grid-auto-rows: min-content; */
+    row-gap: 1rem;
+    font-size: 1rem;
+    background-color: #eee;
+}
+
+.display {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.display h3 {
+    border-bottom: 1px solid #eee;
+}
+  
+.button:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button:active {
+    background-color: #aaaaaa;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+ .button1 {
+    color: #000000 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 8px;
+    border: 3px solid #000000 !important;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+ }
+ .button1:hover {
+    color: #eb0000 !important;
+    border-radius: 50px;
+    border-color: #eb0000 !important;
+    transition: all 0.1s ease 0s;
+ }
+
+ .button2 {
+    color: #000000 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 5px;
+    border: 2px solid #000000 !important;
+    border-radius: 2px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+ }
+ .button2:hover {
+    color: #eb0000 !important;
+    border-radius: 20px;
+    border-color: #eb0000 !important;
+    transition: all 0.3s ease 0s;
+ }
+
+
